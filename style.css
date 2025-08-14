@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('./assets/font/Vazirmatn-Thin.ttf')format('truetype'),
+        url('./assets/font/Vazirmatn-ExtraBold.ttf')format('truetype'),
+        url('./assets/font/Vazirmatn-Black.ttf')format('truetype');
+}
+
+* {
+    font-family: "vazir", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hero-section .caption-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+
+.hero-section .caption-section .direction-icon {
+    position: relative;
+    width: 25%;
+    background-color: dimgrey;
+}
+
+.hero-section .caption-section .direction-icon :focus {
+    outline: #3d74b6;
+
+}
+
+/* style svg */
+.hero-section .caption-section .direction-icon .svg-icon {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .caption-section .direction-icon .svg-icon .search-icon {
+    width: 25px;
+    height: 25px;
+    color: gray;
+    padding: 5px;
+    position: absolute;
+    gap: 10px;
+    right: 50px;
+}
+
+
+.hero-section .caption-section .direction-icon .search-section {
+    width: 280px;
+    height: 35px;
+    background: rgb(246, 246, 246);
+    border: medium;
+    border-radius: 20px;
+    position: absolute;
+    right: 50px;
+    padding-right: 40px;
+}
+
+
+.hero-section .caption-section .title-section {
+    margin-top: 130px;
+}
+
+.hero-section .caption-section .caption-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hero-section .caption-section .caption-button .cbutton-1 {
+    border-radius: 22px;
+    background: #3d74b6;
+    border: medium;
+    padding: 5px 11px 5px 11px;
+    font-size: 20px;
+    color: white;
+}
+
+.hero-section .caption-section .caption-button .cbutton-2 {
+    border-radius: 22px;
+    background: white;
+    border: 2px solid rgb(246, 246, 246);
+    padding: 5px 8px 5px 8px;
+    font-size: 20px;
+}
+/* style cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cards .cards-item {
+
+    background-color: white;
+    border: 1px solid rgb(191, 204, 211);
+    border-radius: 30px;
+
+}
+
+.cards .cards-item .img {
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.cards .cards-item .text-card {
+    margin: 2px 30px 30px;
+    text-align: justify;
+}
+
+.cards .cards-item .text-card .flex-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards .cards-item .text-card .button-card {
+    background: rgb(25, 135, 84);
+    border-radius: 20px;
+    padding: 5px;
+    border: medium;
+    color: white;
+}
+/* respansiv section */
+
+@media (max-width:576px) {
+
+    h1,
+    h2 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .hero-section .caption-section .direction-icon {
+        position: relative;
+        width: 25%;
+        background-color: dimgrey;
+        right: -35px;
+        left: 0;
+
+    }
+
+    .hero-section .caption-section .direction-icon .svg-icon .search-icon {
+        width: 20px;
+        height: 20px;
+        color: gray;
+        padding: 5px;
+        position: absolute;
+        gap: 10px;
+        right: 0px;
+        font-size: 15px;
+    }
+
+    .hero-section .caption-section .direction-icon .search-section {
+        width: 190px;
+        height: 30px;
+        background: rgb(246, 246, 246);
+        border: medium;
+        border-radius: 20px;
+        right: 0;
+        position: absolute;
+    }
+
+    .hero-section .caption-section .caption-button .cbutton-1 {
+        border-radius: 22px;
+        background: #3d74b6;
+        border: medium;
+        padding: 5px 11px 5px 11px;
+        color: white;
+        font-size: 15px;
+    }
+
+    .hero-section .caption-section .caption-button .cbutton-2 {
+        border-radius: 22px;
+        background: white;
+        border: 2px solid rgb(246, 246, 246);
+        padding: 5px 8px 5px 8px;
+        font-size: 15px;
+    } 
+     /* .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+     .cards-item .text-card .button-card {
+        background: rgb(25, 135, 84);
+        border-radius: 20px;
+        padding: 5px;
+        border: medium;
+        color: white;
+        font-size: 12px;
+    } */
+}
